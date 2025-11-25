@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore our gallery of stunning 3D lithophane prints. See how we transform ordinary photos into extraordinary illuminated art pieces.">
+    <title>Gallery - LithoFrame 3D Lithophane Examples</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <i data-lucide="sparkles"></i> LithoFrame
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="order.html" class="btn btn-primary btn-sm">Order Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Gallery Header -->
+    <section class="section" style="padding-top: 120px;">
+        <div class="container">
+            <div class="text-center fade-in" style="max-width: 800px; margin: 0 auto var(--spacing-3xl);">
+                <h1 style="color: var(--color-dark); margin-bottom: var(--spacing-md);">
+                    Our <span class="text-gradient">Gallery</span>
+                </h1>
+                <p style="color: var(--color-gray); font-size: var(--font-size-lg);">
+                    Discover the magic of 3D lithophanes. Each piece is carefully crafted to reveal stunning detail when
+                    illuminated from behind.
+                </p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in-up stagger-1" data-image="assets/images/lithophane-1.png">
+                    <img src="assets/images/lithophane-1.png" alt="Family portrait lithophane with warm backlight">
+                    <div class="gallery-overlay">
+                        <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--spacing-xs);">Family Portrait
+                        </h3>
+                        <p style="font-size: var(--font-size-sm); margin: 0;">Warm backlit lithophane frame</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in-up stagger-2" data-image="assets/images/lithophane-2.png">
+                    <img src="assets/images/lithophane-2.png" alt="Landscape lithophane with mountain scenery">
+                    <div class="gallery-overlay">
+                        <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--spacing-xs);">Mountain Landscape
+                        </h3>
+                        <p style="font-size: var(--font-size-sm); margin: 0;">Detailed relief with LED backlight</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in-up stagger-3" data-image="assets/images/lithophane-3.png">
+                    <img src="assets/images/lithophane-3.png" alt="Romantic couple lithophane in circular frame">
+                    <div class="gallery-overlay">
+                        <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--spacing-xs);">Romantic Moment
+                        </h3>
+                        <p style="font-size: var(--font-size-sm); margin: 0;">Circular frame with elegant glow</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in-up stagger-1" data-image="assets/images/lithophane-1.png">
+                    <img src="assets/images/lithophane-1.png" alt="Custom lithophane example">
+                    <div class="gallery-overlay">
+                        <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--spacing-xs);">Custom Design</h3>
+                        <p style="font-size: var(--font-size-sm); margin: 0;">Personalized lithophane art</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in-up stagger-2" data-image="assets/images/lithophane-2.png">
+                    <img src="assets/images/lithophane-2.png" alt="Nature scene lithophane">
+                    <div class="gallery-overlay">
+                        <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--spacing-xs);">Nature Scene</h3>
+                        <p style="font-size: var(--font-size-sm); margin: 0;">Beautiful outdoor photography</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in-up stagger-3" data-image="assets/images/lithophane-3.png">
+                    <img src="assets/images/lithophane-3.png" alt="Special occasion lithophane">
+                    <div class="gallery-overlay">
+                        <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--spacing-xs);">Special Occasion
+                        </h3>
+                        <p style="font-size: var(--font-size-sm); margin: 0;">Perfect for celebrations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2">
+                <div class="card fade-in-up">
+                    <h3 class="card-title"><i data-lucide="scan"
+                            style="width: 24px; height: 24px; display: inline; vertical-align: text-bottom; margin-right: 8px;"></i>Exceptional
+                        Detail</h3>
+                    <p class="card-text">
+                        Our advanced 3D printing technology captures every nuance of your photo, creating depth and
+                        dimension that traditional prints simply can't match. The varying thickness of the lithophane
+                        creates a stunning grayscale image when backlit.
+                    </p>
+                </div>
+
+                <div class="card fade-in-up stagger-1">
+                    <h3 class="card-title"><i data-lucide="lightbulb"
+                            style="width: 24px; height: 24px; display: inline; vertical-align: text-bottom; margin-right: 8px;"></i>Beautiful
+                        Illumination</h3>
+                    <p class="card-text">
+                        Each lithophane comes to life when placed in front of a light source. The translucent material
+                        reveals incredible detail and creates a warm, inviting glow that transforms any space into
+                        something special.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container">
+            <div class="hero-content fade-in text-center" style="max-width: 700px; margin: 0 auto;">
+                <h2 style="color: var(--color-dark); margin-bottom: var(--spacing-md);">
+                    Ready to Create <span class="text-gradient">Your Own</span>?
+                </h2>
+                <p style="color: var(--color-gray); font-size: var(--font-size-lg); margin-bottom: var(--spacing-xl);">
+                    Transform your favorite photo into a stunning 3D lithophane. The process is simple and the results
+                    are magical.
+                </p>
+                <a href="order.html" class="btn btn-primary btn-lg">Start Your Order</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal/Lightbox -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <img src="" alt="Lithophane detail view" id="modalImage">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 LithoFrame. Transforming memories into art.</p>
+            <p style="margin-top: var(--spacing-sm); font-size: var(--font-size-sm);">
+                Made with <i data-lucide="heart"
+                    style="width: 16px; height: 16px; display: inline; vertical-align: text-bottom;"></i> for preserving
+                precious moments
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/gallery.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
