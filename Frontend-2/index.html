@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame & Love - Personalized 3D Lithophane Gifts</title>
+    <script type="module" src="/src/main.jsx"></script>
+</head>
+<body class="bg-gradient-to-br from-pink-50 via-orange-50 to-yellow-50">
+    
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm shadow-md">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo/Title - Center on mobile, left on desktop -->
+                <h1 class="text-2xl font-bold text-pink-600 flex-1 text-center md:text-left md:flex-none">Frame & Love</h1>
+                
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex gap-6 ml-auto">
+                    <li><a href="#home" class="text-gray-700 hover:text-pink-600 transition">Home</a></li>
+                    <li><a href="#services" class="text-gray-700 hover:text-pink-600 transition">Services</a></li>
+                    <li><a href="#lithophane" class="text-gray-700 hover:text-pink-600 transition">Lithophane</a></li>
+                    <li><a href="#order" class="text-gray-700 hover:text-pink-600 transition">Order</a></li>
+                </ul>
+
+                <!-- Hamburger Menu Icon - Mobile Only -->
+                <button id="mobileMenuBtn" class="md:hidden ml-auto p-2 rounded-lg hover:bg-pink-100 transition">
+                    <svg id="hamburgerIcon" class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg id="closeIcon" class="w-6 h-6 text-gray-700 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200">
+                <ul class="flex flex-col gap-4 pt-4">
+                    <li><a href="#home" class="text-gray-700 hover:text-pink-600 transition block">Home</a></li>
+                    <li><a href="#services" class="text-gray-700 hover:text-pink-600 transition block">Services</a></li>
+                    <li><a href="#lithophane" class="text-gray-700 hover:text-pink-600 transition block">Lithophane</a></li>
+                    <li><a href="#order" class="text-gray-700 hover:text-pink-600 transition block">Order</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="container mx-auto px-6 py-20 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
+                    Transform Your Memories Into <span class="text-pink-600">3D Art</span>
+                </h2>
+                <p class="text-xl text-gray-600 mb-8">
+                    Personalized lithophane prints and 3D gifts that capture your most precious moments in stunning detail
+                </p>
+                <a href="#lithophane" class="inline-block bg-gradient-to-r from-pink-500 to-orange-400 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:scale-105 transition transform">
+                    Discover Lithophanes
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="container mx-auto px-6 py-16">
+            <h3 class="text-4xl font-bold text-center text-gray-800 mb-12">Our Services</h3>
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                
+                <!-- Service Card 1: Print on Demand -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition transform">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-800 mb-4 text-center">Print on Demand</h4>
+                    <p class="text-gray-600 text-center">
+                        Custom 3D model prints for any occasion. From figurines to decorative pieces, we bring your ideas to life with precision printing technology.
+                    </p>
+                </div>
+
+                <!-- Service Card 2: Lithophane -->
+                <a href="#lithophane" class="block bg-gradient-to-br from-pink-100 to-orange-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition transform cursor-pointer border-2 border-pink-300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-orange-400 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-800 mb-4 text-center">Lithophane Photo & Frame</h4>
+                    <p class="text-gray-700 text-center font-medium">
+                        Turn your favorite photos into magical 3D lithophanes that reveal hidden images when backlit. Perfect for gifts that touch the heart.
+                    </p>
+                    <div class="text-center mt-4">
+                        <span class="text-pink-600 font-semibold">Learn More →</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Lithophane Deep Dive Section -->
+        <section id="lithophane" class="bg-white py-16">
+            <div class="container mx-auto px-6">
+                
+                <!-- What is a Lithophane -->
+                <div class="max-w-4xl mx-auto mb-16">
+                    <h3 class="text-4xl font-bold text-gray-800 mb-8 text-center">What is a Lithophane?</h3>
+                    <div class="prose prose-lg mx-auto text-gray-700 space-y-4">
+                        <p>
+                            A lithophane is a three-dimensional art piece that transforms ordinary photographs into stunning translucent sculptures. These unique creations are crafted with varying thickness levels that create a beautiful grayscale image when illuminated from behind, revealing depth and detail that seem almost magical.
+                        </p>
+                        <p>
+                            Originally invented in Europe during the 1800s, lithophanes were painstakingly carved from porcelain by master artisans. Today, we've brought this centuries-old craft into the modern age using advanced 3D printing technology, making it possible to transform your personal photographs into affordable, personalized keepsakes.
+                        </p>
+                        <p>
+                            Each lithophane is precision-printed to capture every subtle detail of your image. Whether it's a cherished family photo, a romantic moment, or a beloved pet, our lithophanes create an emotional connection that goes beyond traditional picture frames. When the light shines through, your memories literally come to life in a way that never fails to amaze.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- How it Looks -->
+                <div class="max-w-6xl mx-auto mb-16">
+                    <h3 class="text-4xl font-bold text-gray-800 mb-8 text-center">How it Looks</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="rounded-2xl overflow-hidden shadow-lg">
+                            <div class="h-64 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                                <span class="text-gray-500">Without Light</span>
+                            </div>
+                        </div>
+                        <div class="rounded-2xl overflow-hidden shadow-lg">
+                            <div class="h-64 bg-gradient-to-br from-yellow-200 to-orange-200 flex items-center justify-center">
+                                <span class="text-gray-700">With Backlight</span>
+                            </div>
+                        </div>
+                        <div class="rounded-2xl overflow-hidden shadow-lg">
+                            <div class="h-64 bg-gradient-to-br from-pink-200 to-purple-200 flex items-center justify-center">
+                                <span class="text-gray-700">LED Frame</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Holder/Frame Designs -->
+                <div class="max-w-6xl mx-auto mb-16">
+                    <h3 class="text-4xl font-bold text-gray-800 mb-8 text-center">Holder & Frame Designs</h3>
+                    <div class="grid md:grid-cols-4 gap-6">
+                        <div class="bg-gradient-to-br from-pink-50 to-orange-50 rounded-xl p-6 text-center hover:shadow-lg transition">
+                            <div class="w-20 h-20 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <span class="text-2xl">🖼️</span>
+                            </div>
+                            <h4 class="font-bold text-gray-800 mb-2">Classic Frame</h4>
+                            <p class="text-sm text-gray-600">Traditional rectangular frame with LED strip</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 text-center hover:shadow-lg transition">
+                            <div class="w-20 h-20 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <span class="text-2xl">💝</span>
+                            </div>
+                            <h4 class="font-bold text-gray-800 mb-2">Heart Stand</h4>
+                            <p class="text-sm text-gray-600">Romantic heart-shaped holder perfect for couples</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-blue-50 to-teal-50 rounded-xl p-6 text-center hover:shadow-lg transition">
+                            <div class="w-20 h-20 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <span class="text-2xl">🌙</span>
+                            </div>
+                            <h4 class="font-bold text-gray-800 mb-2">Moon Lamp</h4>
+                            <p class="text-sm text-gray-600">Curved design with ambient lighting effect</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-green-50 to-yellow-50 rounded-xl p-6 text-center hover:shadow-lg transition">
+                            <div class="w-20 h-20 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <span class="text-2xl">🎁</span>
+                            </div>
+                            <h4 class="font-bold text-gray-800 mb-2">Gift Box</h4>
+                            <p class="text-sm text-gray-600">Illuminated box with decorative elements</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Examples Gallery -->
+                <div class="max-w-6xl mx-auto mb-16">
+                    <h3 class="text-4xl font-bold text-gray-800 mb-8 text-center">Examples Gallery</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="relative group rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+                            <div class="h-64 bg-gradient-to-br from-pink-300 to-rose-400"></div>
+                            <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                                <span class="text-white text-xl font-semibold">Anniversary Gift</span>
+                            </div>
+                        </div>
+                        <div class="relative group rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+                            <div class="h-64 bg-gradient-to-br from-blue-300 to-cyan-400"></div>
+                            <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                                <span class="text-white text-xl font-semibold">New Parents</span>
+                            </div>
+                        </div>
+                        <div class="relative group rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+                            <div class="h-64 bg-gradient-to-br from-purple-300 to-pink-400"></div>
+                            <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                                <span class="text-white text-xl font-semibold">Best Friends</span>
+                            </div>
+                        </div>
+                        <div class="relative group rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+                            <div class="h-64 bg-gradient-to-br from-yellow-300 to-orange-400"></div>
+                            <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                                <span class="text-white text-xl font-semibold">Grandparents</span>
+                            </div>
+                        </div>
+                        <div class="relative group rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+                            <div class="h-64 bg-gradient-to-br from-green-300 to-teal-400"></div>
+                            <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                                <span class="text-white text-xl font-semibold">Pet Lovers</span>
+                            </div>
+                        </div>
+                        <div class="relative group rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+                            <div class="h-64 bg-gradient-to-br from-red-300 to-pink-400"></div>
+                            <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                                <span class="text-white text-xl font-semibold">Wedding Gift</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA to Order Form -->
+                <div class="text-center">
+                    <a href="#order" class="inline-block bg-gradient-to-r from-pink-500 to-orange-400 text-white px-10 py-4 rounded-full text-xl font-bold hover:shadow-xl hover:scale-105 transition transform">
+                        Start Your Order
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Form Section -->
+        <section id="order" class="container mx-auto px-6 py-20">
+            <div class="max-w-3xl mx-auto">
+                <h3 class="text-4xl font-bold text-gray-800 mb-8 text-center">Place Your Order</h3>
+                
+                <!-- Success Message (hidden by default) -->
+                <div id="successMessage" class="hidden bg-green-100 border-2 border-green-400 text-green-800 px-6 py-4 rounded-lg mb-6">
+                    <p class="font-semibold">Thank you! Your lithophane request has been received. Our team will contact you soon.</p>
+                </div>
+
+                <form id="orderForm" class="bg-white rounded-2xl shadow-xl p-8 space-y-6">
+                    
+                    <!-- Full Name -->
+                    <div>
+                        <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name *</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-pink-500 focus:outline-none transition" required>
+                        <span id="nameError" class="text-red-500 text-sm mt-1 hidden">Please enter your full name.</span>
+                    </div>
+
+                    <!-- Contact Number -->
+                    <div>
+                        <label for="contact" class="block text-gray-700 font-semibold mb-2">Contact Number *</label>
+                        <input type="tel" id="contact" name="contact" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-pink-500 focus:outline-none transition" required>
+                        <span id="contactError" class="text-red-500 text-sm mt-1 hidden">Please enter a valid phone number (minimum 10 digits).</span>
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label for="email" class="block text-gray-700 font-semibold mb-2">Email (Optional)</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-pink-500 focus:outline-none transition">
+                        <span id="emailError" class="text-red-500 text-sm mt-1 hidden">Please enter a valid email address.</span>
+                    </div>
+
+                    <!-- Image Upload -->
+                    <div>
+                        <label for="image" class="block text-gray-700 font-semibold mb-2">Upload Your Photo *</label>
+                        <input type="file" id="image" name="image" accept=".jpg,.jpeg,.png" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-pink-500 focus:outline-none transition" required>
+                        <p class="text-gray-500 text-sm mt-1">Accepted formats: JPG, PNG (Max 10MB)</p>
+                        <span id="imageError" class="text-red-500 text-sm mt-1 hidden">Please upload a valid JPG/PNG image under 10MB.</span>
+                        <!-- Image Preview -->
+                        <div id="imagePreview" class="mt-4 hidden">
+                            <img id="previewImage" src="" alt="Preview" class="max-w-xs rounded-lg shadow-md">
+                        </div>
+                    </div>
+
+                    <!-- Size Selection -->
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-3">Select Size *</label>
+                        <div class="space-y-3">
+                            <label class="flex items-center p-4 border-2 border-gray-300 rounded-lg cursor-pointer hover:border-pink-400 transition">
+                                <input type="radio" name="frameSize" value="small" class="w-5 h-5 text-pink-500" required>
+                                <span class="ml-3 text-gray-700">Small (4" x 6") - $29</span>
+                            </label>
+                            <label class="flex items-center p-4 border-2 border-gray-300 rounded-lg cursor-pointer hover:border-pink-400 transition">
+                                <input type="radio" name="frameSize" value="medium" class="w-5 h-5 text-pink-500" checked>
+                                <span class="ml-3 text-gray-700">Medium (6" x 8") - $49</span>
+                            </label>
+                            <label class="flex items-center p-4 border-2 border-gray-300 rounded-lg cursor-pointer hover:border-pink-400 transition">
+                                <input type="radio" name="frameSize" value="large" class="w-5 h-5 text-pink-500">
+                                <span class="ml-3 text-gray-700">Large (8" x 10") - $79</span>
+                            </label>
+                        </div>
+                        <span id="sizeError" class="text-red-500 text-sm mt-1 hidden">Please select a size.</span>
+                    </div>
+
+                    <!-- Frame/Holder Selection -->
+                    <div>
+                        <label for="frameType" class="block text-gray-700 font-semibold mb-2">Frame/Holder Design *</label>
+                        <select id="frameType" name="frameType" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-pink-500 focus:outline-none transition" required>
+                            <option value="">Choose a design...</option>
+                            <option value="classic">Classic Frame</option>
+                            <option value="heart">Heart Stand</option>
+                            <option value="moon">Moon Lamp</option>
+                            <option value="giftbox">Gift Box</option>
+                        </select>
+                        <span id="frameTypeError" class="text-red-500 text-sm mt-1 hidden">Please select a frame/holder design.</span>
+                    </div>
+
+                    <!-- Additional Notes -->
+                    <div>
+                        <label for="notes" class="block text-gray-700 font-semibold mb-2">Additional Notes (Optional)</label>
+                        <textarea id="notes" name="notes" rows="4" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-pink-500 focus:outline-none transition" placeholder="Any special requests or instructions..."></textarea>
+                    </div>
+
+                    <!-- Price Display -->
+                    <div class="bg-gradient-to-r from-pink-100 to-orange-100 p-6 rounded-lg text-center">
+                        <p class="text-gray-700 text-lg mb-2">Total Price</p>
+                        <p id="priceDisplay" class="text-4xl font-bold text-pink-600">$49</p>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full bg-gradient-to-r from-pink-500 to-orange-400 text-white py-4 rounded-lg text-lg font-bold hover:shadow-xl hover:scale-105 transition transform">
+                        Submit Order
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-lg font-semibold mb-2">Frame & Love</p>
+            <p class="text-gray-400">Transform memories into timeless art</p>
+            <p class="text-gray-500 text-sm mt-4">&copy; 2024 Frame & Love. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

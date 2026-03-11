@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom color palette - warm, gift-friendly theme */
+:root {
+    --primary: #FF6B9D;
+    --secondary: #FFA07A;
+    --accent: #FFD700;
+}
