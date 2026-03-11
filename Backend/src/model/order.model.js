@@ -22,6 +22,10 @@ const userSchema = new Schema({
     type: String, //Couldinary URL
     required: true,
   },
+  notes: {
+    type: String,
+    required: false,
+  }
 },{timestamps:true});
 
 

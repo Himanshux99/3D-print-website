@@ -18,14 +18,14 @@ const getOrder = asyncHandler(async (req, res) => {
   //   return res.status(200).json(new ApiResponse(200,order,"Order SuccessFull"))
   try {
     // text fields
-    const { name, email, contact, frameSize } = req.body;
+    const { name, email, contact, frameSize,notes } = req.body;
 
     // file
     const image = req.file;
     // console.log(image)
 
     // ---------- Validation ----------
-    if (!name || !email || !contact || !frameSize) {
+    if (!name || !contact || !frameSize) {
       return res.status(400).json({
         message: "All fields are required",
       });
@@ -62,10 +62,11 @@ const getOrder = asyncHandler(async (req, res) => {
     
     const user = await User.create({
       name,
-      email,
+      email: email || "N/A",
       contact,
       frameSize,
       image: imageCloudPath.secure_url,
+      notes: notes || "N/A"
     });
     
     console.log(user);
@@ -73,6 +74,7 @@ const getOrder = asyncHandler(async (req, res) => {
     return res.status(201).json({
       success: true,
       message: "Order created successfully",
+      data: user
     });
   } catch (error) {
     console.error(error);
