@@ -7,13 +7,7 @@ app.use(express.json({ limit: "16kb" }));
 app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(express.static("public"));
 
-app.use(
-  cors({
-    origin: "https://luminosity-gifts.onrender.com/",
-    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-    allowedHeaders: ["Authorization", "Content-Type"],
-  })
-);
+app.use(cors());
 
 // not -> "*" as express has droped it new syntax "/*" or new regx /.*/
 app.options(/.*/, cors());
