@@ -9,7 +9,7 @@ app.use(express.static("public"));
 
 app.use(
   cors({
-    origin: "*",
+    origin: "https://luminosity-gifts.onrender.com/",
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
     allowedHeaders: ["Authorization", "Content-Type"],
   })
